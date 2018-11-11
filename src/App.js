@@ -3,6 +3,7 @@ import './App.css';
 import RoboFriends from './robofriends';
 import SearchBar from './searchbar';
 import Scroll from './scroll';
+import ErrorBoundary from './errorboundary';
 class App extends Component {
 
   constructor(){
@@ -17,7 +18,7 @@ class App extends Component {
     this.setState({searched: event.target.value});
   }
 
-  onButtonClick=(event)=>{
+  onSearchClick=(event)=>{
     fetch("https://jsonplaceholder.typicode.com/users")
     .then(res=> res.json())
     .then(robs=> this.setState({robots: robs.filter(ind=>{
@@ -27,28 +28,38 @@ class App extends Component {
     .catch(err=>console.log(err));
   }
 
+  onResetClick=(event)=>{
+    this.setState({searched: ""});
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then(res=> res.json())
+    .then(robs=> this.setState({robots: robs}))
+    .catch(err=>console.log(err));
+  }
+
   componentDidMount(){
     fetch("https://jsonplaceholder.typicode.com/users")
     .then(res=> res.json())
     .then(robs=> this.setState({robots: robs}))
-    .catch(err=>console.log(err))
+    .catch(err=>console.log(err));
   }
 
   render() {
     
-    if(this.state.robots.length === 0){
+/*    if(this.state.robots.length === 0){
       return (
         <h1 className="header">Robots yet to be found</h1>
       );
-    }
+    }*/
 
     return (
       <div>
         <p className = "header">Robo Cats</p>
-        <SearchBar onSearchChange={this.onSearchChange} onButtonClick= {this.onButtonClick}/>
-        <Scroll>
-          <RoboFriends robots={this.state.robots} />
-        </Scroll>
+        <SearchBar onSearchChange={this.onSearchChange} textval = {this.state.searched} onSearchClick= {this.onSearchClick} onResetClick={this.onResetClick}/>
+        <ErrorBoundary>
+          <Scroll>
+            <RoboFriends robots={this.state.robots} />
+          </Scroll>
+        </ErrorBoundary>
       </div>
     );
   }
