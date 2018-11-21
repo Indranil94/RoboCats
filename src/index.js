@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import thunkMiddleware from 'redux-thunk';
+import {Provider} from 'react-redux';
+import {createStore,combineReducers,applyMiddleware} from 'redux';
 import App from './App';
+import {SearchRobots,RequestRobots} from './reducers';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
 
-ReactDOM.render(<App className="bgc"/>, document.getElementById('root'));
+const rootReducer = combineReducers({SearchRobots,RequestRobots});
+const store = createStore(rootReducer,applyMiddleware(thunkMiddleware));
 
+ReactDOM.render(
+	<Provider store = {store}>
+		<App className="bgc"/>
+	</Provider>, document.getElementById('root'));
+	
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
