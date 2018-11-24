@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Robocats",
+  "name": "Robo Cats app",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,12 +9,12 @@
     },
     {
       "src": "android-chrome-192x192.png",
-      "sizes": "192x192",
+      "sizes": "192x192 384x384",
       "type": "image/png"
     },
     {
-      "src": "android-chrome-256x256.png",
-      "sizes": "512x512 384x384",
+      "src": "favicon-large.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
