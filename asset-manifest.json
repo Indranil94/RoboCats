@@ -1,7 +1,7 @@
 {
   "main.css": "/RoboCats/static/css/main.a3be9d70.chunk.css",
-  "main.js": "/RoboCats/static/js/main.6ebf3a9e.chunk.js",
-  "main.js.map": "/RoboCats/static/js/main.6ebf3a9e.chunk.js.map",
+  "main.js": "/RoboCats/static/js/main.d75c9923.chunk.js",
+  "main.js.map": "/RoboCats/static/js/main.d75c9923.chunk.js.map",
   "static/css/1.b4ff810a.chunk.css": "/RoboCats/static/css/1.b4ff810a.chunk.css",
   "static/js/1.51efa502.chunk.js": "/RoboCats/static/js/1.51efa502.chunk.js",
   "static/js/1.51efa502.chunk.js.map": "/RoboCats/static/js/1.51efa502.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.b4ff810a.chunk.css.map": "/RoboCats/static/css/1.b4ff810a.chunk.css.map",
   "static/css/main.a3be9d70.chunk.css.map": "/RoboCats/static/css/main.a3be9d70.chunk.css.map",
   "index.html": "/RoboCats/index.html",
-  "precache-manifest.19f21c2326e61f676577a9d1606ece44.js": "/RoboCats/precache-manifest.19f21c2326e61f676577a9d1606ece44.js",
+  "precache-manifest.c8d8335c00719ef09ef0133c672577b0.js": "/RoboCats/precache-manifest.c8d8335c00719ef09ef0133c672577b0.js",
   "service-worker.js": "/RoboCats/service-worker.js"
 }

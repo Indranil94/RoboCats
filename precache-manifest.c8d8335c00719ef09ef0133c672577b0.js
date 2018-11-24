@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/RoboCats/static/js/runtime~main.29426588.js"
   },
   {
-    "revision": "6ebf3a9e326aaebfc516",
-    "url": "/RoboCats/static/js/main.6ebf3a9e.chunk.js"
+    "revision": "d75c9923262e102d5705",
+    "url": "/RoboCats/static/js/main.d75c9923.chunk.js"
   },
   {
     "revision": "51efa5027252817a79a9",
     "url": "/RoboCats/static/js/1.51efa502.chunk.js"
   },
   {
-    "revision": "6ebf3a9e326aaebfc516",
+    "revision": "d75c9923262e102d5705",
     "url": "/RoboCats/static/css/main.a3be9d70.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/RoboCats/static/css/1.b4ff810a.chunk.css"
   },
   {
-    "revision": "eabe77fdd3931e3083a2687f183c3d8d",
+    "revision": "bcf8c03a415fbbe2bc6d67d0975cad85",
     "url": "/RoboCats/index.html"
   }
 ];
