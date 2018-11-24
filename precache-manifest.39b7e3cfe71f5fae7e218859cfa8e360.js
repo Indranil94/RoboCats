@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/RoboCats/static/css/1.b4ff810a.chunk.css"
   },
   {
-    "revision": "bcf8c03a415fbbe2bc6d67d0975cad85",
+    "revision": "f36618c635cb5056e12d207d343c4725",
     "url": "/RoboCats/index.html"
   }
 ];
